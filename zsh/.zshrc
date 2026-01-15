@@ -11,10 +11,26 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-export PATH="$HOME/.local/bin:$HOME/.config/emacs/bin:$PATH"
+# PATH
+## Add .local/bin to path
+export PATH="$HOME/.local/bin:$PATH"
+
+## Add doom emacs to path
+export PATH="$HOME/.config/emacs/bin:$PATH"
+
+## Add go installed binaries to path
+export PATH="$HOME/go/bin:$PATH"
+
+## Add cargo installed binaries to path
+export PATH="$HOME/.cargo/bin:$PATH"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 eval "$(starship init zsh)"
+
+alias emacs="emacsclient -c -a ''"
+alias emacst="emacsclient -t -a ''"
+
+source /usr/share/nvm/init-nvm.sh

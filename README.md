@@ -1,2 +1,2 @@
 # dotfiles
-Dotfile management with chezmoi
+Dotfile management with GNU Stow

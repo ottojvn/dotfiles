@@ -11,6 +11,10 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+# Color
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+
 # PATH
 ## Add .local/bin to path
 export PATH="$HOME/.local/bin:$PATH"

@@ -21,8 +21,11 @@
 ;; See 'C-h v doom-font' for documentation and more examples of what they
 ;; accept. For example:
 ;;
-(setq doom-font (font-spec :family "IntoneMono Nerd Font Mono" :size 20 :weight 'semi-light)
-      doom-variable-pitch-font (font-spec :family "IntoneMono Nerd Font Propo" :size 20))
+(setq doom-font (font-spec :family "IntoneMono Nerd Font Mono" :size 16 :weight 'medium)
+      doom-variable-pitch-font (font-spec :family "IntoneMono Nerd Font Propo" :size 16))
+
+(setq-default default-text-properties '(line-spacing 0.25  line-height 1.25))
+
 ;;
 ;; If you or Emacs can't find your font, use 'M-x describe-font' to look them
 ;; up, `M-x eval-region' to execute elisp code, and 'M-x doom/reload-font' to

@@ -38,3 +38,7 @@ alias emacs="emacsclient -c -a ''"
 alias emacst="emacsclient -t -a ''"
 
 source /usr/share/nvm/init-nvm.sh
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)

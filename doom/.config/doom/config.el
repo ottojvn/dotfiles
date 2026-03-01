@@ -21,7 +21,8 @@
 ;; See 'C-h v doom-font' for documentation and more examples of what they
 ;; accept. For example:
 ;;
-(setq doom-font "BigBlueTermPlus Nerd Font Mono:pixelsize=24:antialias=off:weight=bold")
+;; (setq doom-font "BigBlueTermPlus Nerd Font Mono:pixelsize=24:antialias=off:weight=bold")
+(setq doom-font "JetBrainsMono Nerd Font:pixelsize=20:antialias=on:weight=medium")
 
 (setq-default default-text-properties '(line-spacing 0.25  line-height 1.25))
 
